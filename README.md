@@ -1,6 +1,6 @@
-# Trending Shop
+# The Trendy Store
 
-Trending Shop is a web application built with React that offers users an immersive online shopping experience. It sources product data from a custom backend API and provides features such as browsing products, managing the shopping cart, and user authentication.
+The Trendy Store is a web application built with React that offers users an immersive online shopping experience. It sources product data from a custom backend API and provides features such as browsing products, managing the shopping cart, and user authentication.
 
 ## Table of Contents
 
@@ -14,10 +14,10 @@ Trending Shop is a web application built with React that offers users an immersi
 
 ## Getting Started
 
-To get started with the Trending Shop project, follow these steps:
+To get started with the The Trendy Store project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Kudoo39/trending`
-2. Navigate to the project directory: `cd trending`
+1. Clone the repository: `git clone https://github.com/Kudoo39/the-trendy-store`
+2. Navigate to the project directory: `cd the-trendy-store`
 3. Install dependencies: `npm install` or `yarn install`
 4. Run the app locally: `npm run start` or `yarn start`
 
@@ -46,8 +46,10 @@ To get started with the Trending Shop project, follow these steps:
 src
  ┣ assets
  ┃ ┣ icons
- ┃ ┃ ┗ shop.svg
+ ┃ ┃ ┣ shop.svg
+ ┃ ┃ ┗ store.svg
  ┃ ┗ images
+ ┃ ┃ ┣ admin_dashboard.png
  ┃ ┃ ┣ background.jpg
  ┃ ┃ ┣ cart_demo.png
  ┃ ┃ ┣ default_image.jpg
@@ -57,6 +59,8 @@ src
  ┃ ┃ ┣ products_demo.png
  ┃ ┃ ┗ responsive_demo.png
  ┣ components
+ ┃ ┣ animation
+ ┃ ┃ ┗ animation.css
  ┃ ┣ auth
  ┃ ┃ ┣ DemoAdminAccount.tsx
  ┃ ┃ ┗ DemoUserAccount.tsx
