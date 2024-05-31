@@ -142,11 +142,11 @@ src
 
 ## Deployment
 
-Check out the [Live Demo](https://integrify-trending.netlify.app/) to experience the E-Commerce Website in action.
+Check out the [Live Demo](https://trendy-store.netlify.app/) to experience the E-Commerce Website in action.
 
 ## Screenshots
 
-Here are some screenshots of the Trending Shop:
+Here are some screenshots of the The Trendy Store:
 
 **Homepage:**
 ![Homepage](src/assets/images/homepage_demo.png)
