@@ -2,6 +2,8 @@
 
 The Trendy Store is a web application built with React that offers users an immersive online shopping experience. It sources product data from a custom backend API and provides features such as browsing products, managing the shopping cart, and user authentication.
 
+Back-end Repository: [Trendy Store API](https://github.com/Kudoo39/trendy-store-api)
+
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
