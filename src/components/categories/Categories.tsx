@@ -52,6 +52,8 @@ const Categories = () => {
     return <Box>Error: {error}</Box>
   }
 
+  const validCategories = Array.isArray(categories) ? categories : []
+
   if (matches) {
     return (
       <FormControl fullWidth sx={{ marginTop: 2 }}>
@@ -63,11 +65,11 @@ const Categories = () => {
           label="Category"
           onChange={(event: SelectChangeEvent<string>) => handleCategory(event.target.value as string)}
         >
-          {categories.map(category => (
+          {validCategories.length > 0 ? validCategories.map(category => (
             <MenuItem key={category._id} value={category._id}>
               {category.name}
             </MenuItem>
-          ))}
+          )) : <MenuItem disabled>No categories available</MenuItem>}
         </Select>
       </FormControl>
     )
@@ -89,14 +91,18 @@ const Categories = () => {
           marginLeft: '10px'
         }}
       >
-        {categories.map(category => (
+        {validCategories.length > 0 ? validCategories.map(category => (
           <ListItem key={category._id} disablePadding onClick={() => handleCategory(category._id)}>
             <ListItemButton>
               <ListItemText primary={category.name} />
               {selectedCategory === category._id ? <CheckIcon /> : null}
             </ListItemButton>
           </ListItem>
-        ))}
+        )) : (
+          <ListItem>
+            <ListItemText primary="No categories available" />
+          </ListItem>
+        )}
       </List>
     </Box>
   )

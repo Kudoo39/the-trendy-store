@@ -20,7 +20,7 @@ root.render(
       <HashRouter>
         <CssVarsProvider theme={theme}>
           <CssBaseline />
-          <ToastContainer />
+          <ToastContainer theme="colored"/>
           <App />
         </CssVarsProvider>
       </HashRouter>

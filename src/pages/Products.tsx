@@ -43,7 +43,7 @@ const Products = () => {
   const productsPerPage = 8
 
   const user = useSelector((state: AppState) => state.users.user)
-  const products = useSelector((state: AppState) => state.products.products)
+  const products = useSelector((state: AppState) => state.products.products || [])
   const total = useSelector((state: AppState) => state.products.total)
   const selectedCategory = useSelector((state: AppState) => state.categories.selectedCategory)
   const loading = useSelector((state: AppState) => state.products.loading)
